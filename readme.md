@@ -1,3 +1,3 @@
-# Event Store documentation website
+# Event Store staging website
 
-[docs.geteventstore.com](http://docs.geteventstore.com)
+[stage.geteventstore.com](http://stage.geteventstore.com)
