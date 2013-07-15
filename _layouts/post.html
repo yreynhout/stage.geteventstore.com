@@ -1,0 +1,17 @@
+{% include header.html %}
+{% include titlebar.html %}
+
+<div class="cr-grid-container">
+	<div class="cr-grid-row">
+		<div class="cr-grid-3col">
+			<article class="es-blog-post">
+				<header>
+					<h1 class="es-blog-post-title">{{ page.title }}</h1>
+				</header>
+				{{ page.content }}
+			</article>
+		</div>
+	</div>
+</div>
+
+{% include footer.html %}

@@ -1,0 +1,21 @@
+body {
+	background: $cr-white;
+	color: $cr-black;
+}
+
+a {
+	color: $cr-blue;
+	text-decoration: none;
+	border-bottom: 1px solid $cr-light-grey;
+	-webkit-transition: all 0.05s linear;
+	transition: all 0.05s linear;
+	&:hover, &:focus {
+		color: $cr-dark-blue;
+	}
+	.cr-footer & {
+		color: $cr-grey;
+		&:hover, &:focus {
+			color: $cr-black;
+		}
+	}
+}

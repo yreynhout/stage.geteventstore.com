@@ -1,0 +1,17 @@
+	<div class="cr-titlebar">
+		<div class="cr-grid-container">
+			<div class="cr-grid-row">
+				<div class="cr-grid-1col">
+					<h1 class="cr-titlebar-title"><a href="{{ site.url }}">Event Store</a></h1>
+				</div>
+				<div class="cr-grid-2col">
+					<ul class="cr-titlebar-menu">
+						<li class="cr-titlebar-menu-toggle"><a href="javascript:void(0)">&equiv;</a></li>
+						{% assign pages_list = site.pages %}
+						{% assign group = 'navigation' %}
+						{% include pages_list %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>

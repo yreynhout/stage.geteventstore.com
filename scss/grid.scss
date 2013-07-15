@@ -1,0 +1,50 @@
+.cr-grid-container {
+	max-width: $cr-grid-max-width;
+	margin: 0 auto;
+	padding: 0 ($cr-grid-gutter / 2);
+}
+
+.cr-grid-row {
+	&:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+	* html & {
+		zoom: 1; /* IE6 Hack */
+	}
+	*:first-child+html & {
+		zoom: 1; /* IE7 Hack */
+	}
+}
+
+.cr-grid-1col {
+	@extend .cr-grid-col;
+	width: 33.33333%
+}
+
+.cr-grid-2col {
+	@extend .cr-grid-col;
+	width: 66.66666%;
+}
+
+.cr-grid-3col {
+	@extend .cr-grid-col;
+	width: 100%;
+}
+
+.cr-grid-col {
+	-moz-box-sizing: border-box; /* Firefox Hack */
+	box-sizing: border-box;
+	float: left;
+	display: inline-block;
+	padding: 0 ($cr-grid-gutter / 2);
+}
+
+@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
+	.cr-grid-col {
+		width: 100%;
+	}
+}

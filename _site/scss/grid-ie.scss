@@ -1,0 +1,22 @@
+.cr-grid-container {
+	width: $cr-grid-fixed-width;
+}
+
+.cr-grid-col-ie {
+	box-sizing: content-box;
+}
+
+.cr-grid-1col {
+	@extend .cr-grid-col-ie;
+	width: ($cr-grid-fixed-width / 3) - $cr-grid-gutter;
+}
+
+.cr-grid-2col {
+	@extend .cr-grid-col-ie;
+	width: ($cr-grid-fixed-width * 2 / 3) - $cr-grid-gutter;
+}
+
+.cr-grid-3col {
+	@extend .cr-grid-col-ie;
+	width: $cr-grid-fixed-width - $cr-grid-gutter;
+}

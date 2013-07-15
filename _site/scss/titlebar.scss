@@ -1,0 +1,65 @@
+.cr-titlebar {
+	background: $cr-off-white;
+	line-height: 1em;
+}
+
+.cr-titlebar-title {
+	margin: 1.5em 0;
+	font-size: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	a {
+		color: $cr-black;
+		border-bottom: none;
+	}
+}
+
+.cr-titlebar-menu {
+	text-align: right;
+	li {
+		display: inline;
+		padding: 0 0 0 1em;
+		a {
+			display: inline-block;
+			padding: 1.5em 0;
+			border-bottom: none;
+			color: $cr-grey;
+			&:hover, &:focus {
+				color: $cr-black;
+			}
+		}
+		&.cr-titlebar-menu-toggle {
+			display: none;
+		}
+	}
+	@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
+		text-align: left;
+		li {
+			display: none;
+			padding: 0;
+			a {
+				display: block;
+				border-top: 1px solid $cr-light-grey;
+				padding: 1em 0;
+			}
+			&.cr-titlebar-menu-toggle {
+				display: block;
+				a {
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 0;
+					padding: 1em 1em 1em 5em;
+					border: none;
+					font-size: 1.5em;
+					font-weight: 400;
+				}
+			}
+		}
+		&:hover, &:focus {
+			li {
+				display: block;
+			}
+		}
+	}
+}
