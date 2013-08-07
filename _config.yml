@@ -1,6 +1,6 @@
 name: "Event Store"
 description: "The open-source, functional database with Complex Event Processing in JavaScript."
-url: "http://stage.geteventstore.dev"
+url: "http://stage.geteventstore.com"
 keywords: "eventstore, event store, event sourcing, ouro, ouroboros, greg young, gregyoung, cqrs, projections"
 paginate: 5
 markdown: rdiscount
