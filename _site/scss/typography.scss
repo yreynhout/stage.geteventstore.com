@@ -17,11 +17,15 @@ h1 {
 h2 {
 	margin: 1em 0 0;
 	font-size: $cr-unit * 4;
+	font-weight: 700;
+	color: $es-black;
 }
 
 h3 {
 	margin: 1em 0 0;
 	font-size: $cr-unit * 3;
+	font-weight: 700;
+	color: $es-black;
 }
 
 p {
@@ -56,19 +60,21 @@ ul {
 .cr-code {
 	background: $es-off-white;
 	font-family: $cr-monospace;
-	font-size: 0.8em;
-	letter-spacing: -0.075em;
 }
 
 code {
 	@extend .cr-code;
 	padding: 0.1em 0.5em;
+	font-size: 0.8em;
+	letter-spacing: -0.075em;
+	line-height: 1.2;
 }
 
 pre {
 	@extend .cr-code;
-	margin: 1.25em 0 0;
-	padding: 1em;
-    white-space: pre-wrap;
-/*    word-wrap: break-word; */
+	margin: 1em 0 0;
+	padding: $cr-unit;
+	code {
+		padding: 0;
+	}
 }

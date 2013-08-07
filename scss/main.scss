@@ -7,16 +7,17 @@
 @import "grid";
 @import "titlebar";
 @import "footer";
+@import "syntax";
 
 .es-titlebar-button {
 	a {
 		padding: $cr-unit $cr-unit * 2 !important;
 		background: $es-green;
-		color: $es-off-white;
+		color: $es-off-white !important;
 		border-radius: $cr-unit * 0.5;
 		&:hover, &:focus {
 			background: $es-dark-green;
-			color: $es-white;
+			color: $es-white !important;
 		}
 	}
 	@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
@@ -35,6 +36,13 @@
 		&:hover, &:focus {
 			color: $es-yellow;
 		}
+	}
+}
+
+.es-content {
+	margin: $cr-unit * 2 0 0;
+	ul, ol {
+		margin: 1em 0 0;
 	}
 }
 
