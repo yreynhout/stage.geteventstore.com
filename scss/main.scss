@@ -8,6 +8,25 @@
 @import "titlebar";
 @import "footer";
 
+.es-titlebar-button {
+	a {
+		padding: $cr-unit $cr-unit * 2;
+		background: $es-green;
+		color: $es-off-white;
+		border-radius: $cr-unit * 0.5;
+		&:hover, &:focus {
+			background: $es-dark-green;
+			color: $es-white;
+		}
+	}
+	@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
+		a {
+			padding: $cr-unit * 2;
+			margin: 0 0 $cr-unit * 3;
+		}
+	}
+}
+
 .es-banner-styles {
 	-webkit-font-smoothing: antialiased;
 	a {

@@ -10,19 +10,19 @@
 
 .es-titlebar-button {
 	a {
-		padding: $cr-unit $cr-unit * 2 !important;
-		border-radius: $cr-unit * 0.5;
+		padding: $cr-unit $cr-unit * 2;
 		background: $es-green;
 		color: $es-off-white;
-		-webkit-font-smoothing: antialiased;
+		border-radius: $cr-unit * 0.5;
 		&:hover, &:focus {
 			background: $es-dark-green;
 			color: $es-white;
 		}
-		@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
-			padding: $cr-unit * 2 !important;
+	}
+	@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
+		a {
+			padding: $cr-unit * 2;
 			margin: 0 0 $cr-unit * 3;
-			text-align: center;
 		}
 	}
 }
