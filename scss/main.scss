@@ -8,16 +8,59 @@
 @import "titlebar";
 @import "footer";
 
-.active {
-	color: $es-black;
+.es-banner-styles {
+	-webkit-font-smoothing: antialiased;
+	a {
+		border-bottom: none;
+		&:hover, &:focus {
+			color: $es-yellow;
+		}
+	}
 }
 
-.es-blog-post {
-	margin: 1.5em 0 0;
-	padding: 3em 1em;
-	border: 1px solid $es-off-white;
-	header, h2, h3, p, ul, ol {
-		max-width: 30em;
-		margin: 1.5em auto 0;
+.es-banner {
+	@extend .es-banner-styles;
+	margin: 0 0 $cr-unit * 3;
+	padding: $cr-unit * 12 0;
+	background: $es-black;
+	.cr-type-lead {
+		color: $es-white;
+	}
+}
+
+.es-page-banner {
+	@extend .es-banner-styles;
+	padding: $cr-unit * 3 0;
+	background: $es-white;
+	color: $es-grey;
+	border-bottom: 1px solid $es-light-grey;
+}
+
+.es-sidebar {
+	margin: $cr-unit * 3 0;
+	h2 {
+		font-size: 1em;
+		font-weight: 700;
+		color: $es-black;
+	}
+}
+
+.es-home-tile {
+	margin: $cr-unit * 3 0 0;
+	padding: $cr-unit * 3;
+	background: $es-off-white;
+	border-top: $cr-unit solid $es-green;
+	border-radius: $cr-unit * 0.5;
+	color: $es-grey;
+	-webkit-transition: all 0.5s linear;
+	        transition: all 0.5s linear;
+	h2 {
+		margin: 0;
+		color: $es-black;
+		font-size: $cr-unit * 3;
+		font-weight: 400;
+	}
+	&:hover, &:focus {
+		background: $es-light-grey;
 	}
 }

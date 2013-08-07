@@ -3,16 +3,12 @@
 $cr-unit: 8px;
 $cr-rem:  $cr-unit * 2;
 
-/* Make sure to include webfonts in the <head>
-   http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Source+Code+Pro:400,700
-*/
-
-$cr-sans-serif: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$cr-monospace:  'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+$cr-sans-serif: aktiv-grotesk-std, 'Helvetica Neue', Helvetica, arial, sans-serif;
+$cr-monospace:  source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 /* Grid Variables */
 
 $cr-grid-gutter:      20px; /* Space between columns */
 $cr-grid-max-width:   1200px; /* Pixel value, divisible by three */
-$cr-grid-breakpoint:  720px; /* Single column layout below this value */
+$cr-grid-breakpoint:  800px; /* Single column layout below this value */
 $cr-grid-fixed-width: 960px; /* IE-safe pixel value, divisible by three */

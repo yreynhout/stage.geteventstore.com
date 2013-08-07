@@ -1,16 +1,21 @@
 .cr-titlebar {
-	background: $cr-off-white;
+	background: $es-off-white;
 	line-height: 1em;
+	font-weight: 400;
 }
 
 .cr-titlebar-title {
 	margin: 1.5em 0;
 	font-size: 1em;
-	font-weight: 700;
-	text-transform: uppercase;
 	a {
-		color: $cr-black;
+		display: block;
+		height: $cr-unit * 4;
 		border-bottom: none;
+		background-image: url('../images/eventstore.svg');
+		background-position: center left;
+		background-repeat: no-repeat;
+		background-size: contain;
+		text-indent: -9999em;
 	}
 }
 
@@ -21,12 +26,8 @@
 		padding: 0 0 0 1em;
 		a {
 			display: inline-block;
-			padding: 1.5em 0;
+			padding: 2em 0;
 			border-bottom: none;
-			color: $cr-grey;
-			&:hover, &:focus {
-				color: $cr-black;
-			}
 		}
 		&.cr-titlebar-menu-toggle {
 			display: none;
@@ -39,7 +40,7 @@
 			padding: 0;
 			a {
 				display: block;
-				border-top: 1px solid $cr-light-grey;
+				border-top: 1px solid $es-light-grey;
 				padding: 1em 0;
 			}
 			&.cr-titlebar-menu-toggle {
@@ -49,7 +50,7 @@
 					position: absolute;
 					top: 0;
 					right: 0;
-					padding: 1em 1em 1em 5em;
+					padding: 1.33333em 1em 1.33333em 5em;
 					border: none;
 					font-size: 1.5em;
 					font-weight: 400;

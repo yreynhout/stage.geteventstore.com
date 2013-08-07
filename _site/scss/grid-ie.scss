@@ -2,21 +2,55 @@
 	width: $cr-grid-fixed-width;
 }
 
-.cr-grid-col-ie {
+@mixin cr-grid-col-ie($colspan) {
 	box-sizing: content-box;
+	width: ($cr-grid-fixed-width * $colspan / 12) - $cr-grid-gutter;
 }
 
 .cr-grid-1col {
-	@extend .cr-grid-col-ie;
-	width: ($cr-grid-fixed-width / 3) - $cr-grid-gutter;
+	@include cr-grid-col-ie(1);
 }
 
 .cr-grid-2col {
-	@extend .cr-grid-col-ie;
-	width: ($cr-grid-fixed-width * 2 / 3) - $cr-grid-gutter;
+	@include cr-grid-col-ie(2);
 }
 
 .cr-grid-3col {
-	@extend .cr-grid-col-ie;
-	width: $cr-grid-fixed-width - $cr-grid-gutter;
+	@include cr-grid-col-ie(3);
+}
+
+.cr-grid-4col {
+	@include cr-grid-col-ie(4);
+}
+
+.cr-grid-5col {
+	@include cr-grid-col-ie(5);
+}
+
+.cr-grid-6col {
+	@include cr-grid-col-ie(6);
+}
+
+.cr-grid-7col {
+	@include cr-grid-col-ie(7);
+}
+
+.cr-grid-8col {
+	@include cr-grid-col-ie(8);
+}
+
+.cr-grid-9col {
+	@include cr-grid-col-ie(9);
+}
+
+.cr-grid-10col {
+	@include cr-grid-col-ie(10);
+}
+
+.cr-grid-11col {
+	@include cr-grid-col-ie(11);
+}
+
+.cr-grid-12col {
+	@include cr-grid-col-ie(12);
 }

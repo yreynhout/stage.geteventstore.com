@@ -1,33 +1,9 @@
-/* Bath ASU and Pharmaxo */
-$ba-black:      #363636;
-$ba-grey:       #ADAFB1;
-$ba-off-white:  #F3F3F3;
-$ba-white:      #FFF;
-$ba-blue:       #009CDB;
-$ba-dark-blue:  #0E6A8E;
-$ba-red:        #E1163C;
-$ba-green:      #A8A011;
-$ba-dark-green: #8E8807;
-
-/* Cognisant Research */
-$cr-black:      #363636;
-$cr-grey:       #ADADAD;
-$cr-light-grey: lighten($cr-grey, 20%);
-$cr-off-white:  #F3F3F3;
-$cr-white:      #FFF;
-$cr-blue:       #3C83C3;
-$cr-dark-blue:  #152D43;
-$cr-red:        #CD5A54;
-
 /* Event Store */
 $es-black:      #222;
+$es-grey:       #797979;
+$es-light-grey: lighten($es-grey, 40%);
 $es-off-white:  #F3F3F3;
 $es-white:      #FFF;
 $es-green:      #6BA300;
 $es-dark-green: #395600;
 $es-yellow:     #CDD939;
-
-/* mAbstalk.com */
-$mt-black:      #404144;
-$mt-white:      #FFF;
-$mt-blue:       #1566FF;

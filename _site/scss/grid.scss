@@ -20,31 +20,62 @@
 	}
 }
 
-.cr-grid-1col {
-	@extend .cr-grid-col;
-	width: 33.33333%
-}
-
-.cr-grid-2col {
-	@extend .cr-grid-col;
-	width: 66.66666%;
-}
-
-.cr-grid-3col {
-	@extend .cr-grid-col;
-	width: 100%;
-}
-
-.cr-grid-col {
+@mixin cr-grid-col($colspan) {
 	-moz-box-sizing: border-box; /* Firefox Hack */
 	box-sizing: border-box;
 	float: left;
 	display: inline-block;
+	width: (100% * $colspan / 12);
 	padding: 0 ($cr-grid-gutter / 2);
-}
-
-@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
-	.cr-grid-col {
+	@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
 		width: 100%;
 	}
+}
+
+.cr-grid-1col {
+	@include cr-grid-col(1);
+}
+
+.cr-grid-2col {
+	@include cr-grid-col(2);
+}
+
+.cr-grid-3col {
+	@include cr-grid-col(3);
+}
+
+.cr-grid-4col {
+	@include cr-grid-col(4);
+}
+
+.cr-grid-5col {
+	@include cr-grid-col(5);
+}
+
+.cr-grid-6col {
+	@include cr-grid-col(6);
+}
+
+.cr-grid-7col {
+	@include cr-grid-col(7);
+}
+
+.cr-grid-8col {
+	@include cr-grid-col(8);
+}
+
+.cr-grid-9col {
+	@include cr-grid-col(9);
+}
+
+.cr-grid-10col {
+	@include cr-grid-col(10);
+}
+
+.cr-grid-11col {
+	@include cr-grid-col(11);
+}
+
+.cr-grid-12col {
+	@include cr-grid-col(12);
 }
