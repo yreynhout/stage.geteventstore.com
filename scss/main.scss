@@ -10,7 +10,7 @@
 
 .es-titlebar-button {
 	a {
-		padding: $cr-unit $cr-unit * 2;
+		padding: $cr-unit $cr-unit * 2 !important;
 		background: $es-green;
 		color: $es-off-white;
 		border-radius: $cr-unit * 0.5;
@@ -21,7 +21,7 @@
 	}
 	@media screen and (max-width: $cr-grid-breakpoint), screen and (max-device-width: $cr-grid-breakpoint) {
 		a {
-			padding: $cr-unit * 2;
+			padding: $cr-unit * 2 !important;
 			margin: 0 0 $cr-unit * 3;
 		}
 	}
